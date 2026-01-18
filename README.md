@@ -45,12 +45,11 @@ The model supports:
 
 ## Prerequisites
 
-- **Operating System**: Linux (tested on Ubuntu)
-- **GPU**: NVIDIA GPU with CUDA support (recommended: A100, V100, or RTX 3090+)
+- **Operating System**: Linux
+- **GPU**: NVIDIA GPU with CUDA support (2 x RTX A6000s used)
 - **CUDA**: Version 11.x or higher
 - **Conda**: Miniconda or Anaconda for environment management
 - **Python**: 3.10+
-- **Storage**: ~50GB for datasets and checkpoints
 
 ---
 
