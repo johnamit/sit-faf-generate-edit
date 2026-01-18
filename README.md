@@ -1,6 +1,6 @@
 <img src="assets/icons/sit_faf_edit2.png" alt="ContraCTGAN" width="900"><br>
 
-A deep learning project for **Fundus Autofluorescence (FAF) image generation, inversion and editing** using Scalable Interpolant Transformers (SiT). This repository enables conditional generation of synthetic FAF images based on genetic mutations, patient age, and eye laterality, with support for real-to-latent inversion and semantic image editing.
+A deep learning project for **Fundus Autofluorescence (FAF) image generation, inversion and editing** using [Scalable Interpolant Transformers (SiT)](https://github.com/willisma/SiT). This repository enables conditional generation of synthetic FAF images based on genetic mutations, patient age, and eye laterality, with support for real-to-latent inversion and semantic image editing.
 
 <p>
   <a href="#overview"><img src="https://img.shields.io/badge/Overview-111111?style=for-the-badge" alt="Overview"></a>
