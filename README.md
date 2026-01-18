@@ -595,7 +595,7 @@ python scripts/evaluation/evaluate_conditioning.py \
 
 **What it evaluates:**
 - **Laterality Accuracy**: Classification accuracy for L/R prediction
-- **Age Correlation**: R² and MAE for age regression
+- **Age Correlation**: R and MAE for age regression
 
 **Example Results (10k samples):**
 ```
