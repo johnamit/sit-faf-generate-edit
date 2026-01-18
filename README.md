@@ -1,6 +1,6 @@
-# FAF Flow Edit
+# SiT FAF Generation, Inversion and Editing
 
-A deep learning project for **Fundus Autofluorescence (FAF) image generation and editing** using Scalable Interpolant Transformers (SiT). This repository enables conditional generation of synthetic FAF images based on genetic mutations, patient age, and eye laterality, with support for real-to-latent inversion and semantic image editing.
+A deep learning project for **Fundus Autofluorescence (FAF) image generation, inversion and editing** using Scalable Interpolant Transformers (SiT). This repository enables conditional generation of synthetic FAF images based on genetic mutations, patient age, and eye laterality, with support for real-to-latent inversion and semantic image editing.
 
 <p>
   <a href="#overview"><img src="https://img.shields.io/badge/Overview-111111?style=for-the-badge" alt="Overview"></a>
@@ -209,8 +209,8 @@ torchrun --nproc_per_node=<NUM_GPUS> train.py \
     --mapping-file ../data/class_mapping.json \
     --model SiT-XL/2 \
     --image-size 256 \
-    --epochs 1400 \
-    --global-batch-size 256 \
+    --epochs 200 \
+    --global-batch-size 16 \
     --results-dir results \
     --ckpt-every 50000 \
     --sample-every 10000 \
@@ -226,10 +226,10 @@ torchrun --nproc_per_node=<NUM_GPUS> train.py \
 | `--img-dir` | Directory containing images | Required |
 | `--mapping-file` | Gene-to-index JSON mapping | Required |
 | `--model` | Model architecture | `SiT-XL/2` |
-| `--image-size` | Training resolution | `256` |
-| `--epochs` | Number of training epochs | `1400` |
+| `--image-size` | Training resolution | `16` |
+| `--epochs` | Number of training epochs | `200` |
 | `--global-batch-size` | Total batch size across GPUs | `256` |
-| `--cfg-scale` | Classifier-free guidance scale | `4.0` |
+| `--cfg-scale` | Classifier-free guidance scale | `4.0` (default) |
 | `--wandb` | Enable W&B logging | Flag |
 | `--ckpt` | Resume from checkpoint | Optional |
 
@@ -739,6 +739,6 @@ If you use this code in your research, please cite:
 
 ## License
 
-This project is licensed under the terms specified in [LICENSE.txt](SiT/LICENSE.txt).
+This project is licensed under the terms specified in [TO ADD LATER].
 
 **Note**: The medical imaging data used in this project is confidential and not included in this repository. Please ensure you have appropriate permissions and ethics approval before working with medical imaging data.
