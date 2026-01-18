@@ -5,13 +5,13 @@ A deep learning project for **Fundus Autofluorescence (FAF) image generation, in
 <p>
   <a href="#overview"><img src="https://img.shields.io/badge/Overview-111111?style=for-the-badge" alt="Overview"></a>
   <a href="#prerequisites"><img src="https://img.shields.io/badge/Prerequisites-111111?style=for-the-badge" alt="Prerequisites"></a>
+  <a href="#project-structure"><img src="https://img.shields.io/badge/Structure-111111?style=for-the-badge" alt="Project Structure"></a>
   <a href="#environment-setup"><img src="https://img.shields.io/badge/Setup-111111?style=for-the-badge" alt="Environment Setup"></a>
   <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-111111?style=for-the-badge" alt="Dataset"></a>
   <a href="#training"><img src="https://img.shields.io/badge/Training-111111?style=for-the-badge" alt="Training"></a>
   <a href="#sampling"><img src="https://img.shields.io/badge/Sampling-111111?style=for-the-badge" alt="Sampling"></a>
   <a href="#inversion-and-editing"><img src="https://img.shields.io/badge/Inversion & Editing-111111?style=for-the-badge" alt="Inversion and Editing"></a>
   <a href="#evaluation"><img src="https://img.shields.io/badge/Evaluation-111111?style=for-the-badge" alt="Evaluation"></a>
-  <a href="#project-structure"><img src="https://img.shields.io/badge/Structure-111111?style=for-the-badge" alt="Project Structure"></a>
   <a href="#citation"><img src="https://img.shields.io/badge/Citation-111111?style=for-the-badge" alt="Citation"></a>
 </p>
 
