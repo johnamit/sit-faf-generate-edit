@@ -632,16 +632,6 @@ python -m pytorch_fid \
     data/eval_10kSamples_256res/synthetic_10kSamples_SiT_256res
 ```
 
-**Using StyleGAN2-ADA's calc_metrics.py:**
-```bash
-cd stylegan2-ada-pytorch
-
-python calc_metrics.py \
-    --network <path/to/network.pkl> \
-    --metrics fid50k_full \
-    --data <path/to/real_dataset_zip_or_folder>
-```
-
 **Compare SiT vs StyleGAN2-ADA:**
 ```bash
 # SiT FID
