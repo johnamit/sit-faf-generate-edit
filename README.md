@@ -1,4 +1,10 @@
 <img src="assets/icons/sit_faf_edit2.png" alt="ContraCTGAN" width="900"><br>
+<a href="https://huggingface.co/johnamit/sit-faf-generate-edit">
+  <img
+    src="https://img.shields.io/badge/View%20Model-HuggingFace-black?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=ff7f1e"
+    alt="View Model on Hugging Face"
+  />
+</a>
 
 A deep learning project for **Fundus Autofluorescence (FAF) image generation, inversion and editing** using [Scalable Interpolant Transformers (SiT)](https://github.com/willisma/SiT). This repository enables conditional generation of synthetic FAF images based on genetic mutations, patient age, and eye laterality, with support for real-to-latent inversion and semantic image editing.
 
@@ -241,6 +247,8 @@ torchrun --nproc_per_node=<NUM_GPUS> train.py \
     --ckpt results/<experiment>/checkpoints/<step>.pt \
     ...
 ```
+
+The trained SiT-XL/2 model can be found in the [huggingface repo](https://huggingface.co/johnamit/sit-faf-generate-edit) for this project.
 
 ---
 
@@ -575,6 +583,8 @@ python invert.py edit \
 ---
 
 ## Evaluation
+
+All models used for evaluation can be found in the [huggingface repo](https://huggingface.co/johnamit/sit-faf-generate-edit) for this project.
 
 ### Conditioning Evaluation
 
