@@ -30,6 +30,12 @@ visuals/
 evaluation/generated_*
 evaluation/stylegan_*
 
+# EXCEPTIONS: Keep example inversion/edit images for README
+!SiT/inversions/
+!SiT/inversions/00000018_pat_00448798_sdb/
+!SiT/edits/
+!SiT/edits/00000018_pat_00448798_sdb/
+
 # ===========================
 # 3. IMAGES & MEDIA
 # ===========================
@@ -41,6 +47,13 @@ evaluation/stylegan_*
 # EXCEPTIONS: Keep your specific plots
 !evaluation/conditioning_results_1k/age_correlation_plot.png
 !evaluation/conditioning_results_10k/age_correlation_plot.png
+
+# EXCEPTIONS: Keep example inversion/edit images for README
+!SiT/inversions/00000018_pat_00448798_sdb/*.png
+!SiT/edits/00000018_pat_00448798_sdb/*.png
+
+# Exceptions asset folder
+!assets/icons/*
 
 # ===========================
 # 4. MODEL WEIGHTS (Big Files)
