@@ -1,0 +1,76 @@
+# ===========================
+# 1. ARCHIVES & DATASETS
+# ===========================
+archive/
+data/*
+!data/class_mapping.json
+!data/README.md
+
+# Ignore all CSVs (Metadata)
+*.csv
+
+# ===========================
+# 2. OUTPUTS & LOGS (Crucial for SiT/StyleGAN)
+# ===========================
+# SiT specific outputs
+SiT/wandb/
+SiT/results/
+SiT/samples/
+wandb/
+
+# StyleGAN specific outputs
+stylegan2-ada-pytorch/results/
+stylegan2-ada-pytorch/smoke_test_output/
+.cache/
+
+# General Model Outputs
+edits/
+inversions/
+visuals/
+evaluation/generated_*
+evaluation/stylegan_*
+
+# ===========================
+# 3. IMAGES & MEDIA
+# ===========================
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# EXCEPTIONS: Keep your specific plots
+!evaluation/conditioning_results_1k/age_correlation_plot.png
+!evaluation/conditioning_results_10k/age_correlation_plot.png
+
+# ===========================
+# 4. MODEL WEIGHTS (Big Files)
+# ===========================
+*.pt
+*.pth
+*.pkl
+*.ckpt
+*.safetensors
+pretrained_models/
+checkpoints/
+weights/
+
+# ===========================
+# 5. PYTHON & ENVIRONMENT
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.env
+.venv
+env/
+venv/
+*.log
+
+# ===========================
+# 6. IDE SETTINGS
+# ===========================
+.vscode/
+.idea/
+*.swp
+.DS_Store

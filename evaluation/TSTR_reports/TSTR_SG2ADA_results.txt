@@ -1,0 +1,49 @@
+Experiment: TSTR_SG2ADA
+Training Set: data/eval_10kSamples_256res/synthetic_10kSamples_stylegan2ada_256res (mode: synthetic)
+Testing Set: data/images_256_cleaned (mode: real)
+Number of classes: 34
+Classes: ['ABCA4', 'BBS1', 'BEST1', 'CACNA1F', 'CDH23', 'CERKL', 'CHM', 'CNGA3', 'CNGB3', 'CRB1', 'CRX', 'CYP4V2', 'EFEMP1', 'EYS', 'GUCY2D', 'KCNV2', 'MERTK', 'MYO7A', 'NR2E3', 'OPA1', 'PDE6B', 'PRPF31', 'PRPF8', 'PRPH2', 'RDH12', 'RHO', 'RP1', 'RP1L1', 'RP2', 'RPE65', 'RPGR', 'RS1', 'TIMP3', 'USH2A']
+
+Final Test Accuracy: 46.33%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       ABCA4       0.66      0.87      0.75      9133
+        BBS1       0.16      0.41      0.23       328
+       BEST1       0.83      0.42      0.56      1645
+     CACNA1F       0.50      0.16      0.25       430
+       CDH23       0.23      0.11      0.15       377
+       CERKL       0.15      0.19      0.17       318
+         CHM       0.60      0.80      0.69      2553
+       CNGA3       0.26      0.28      0.27       340
+       CNGB3       0.31      0.15      0.20       386
+        CRB1       0.27      0.05      0.09       833
+         CRX       0.09      0.16      0.11       275
+      CYP4V2       0.07      0.23      0.11       288
+      EFEMP1       0.88      0.47      0.61       263
+         EYS       0.15      0.04      0.06       772
+      GUCY2D       0.10      0.06      0.07       300
+       KCNV2       0.23      0.08      0.12       248
+       MERTK       0.52      0.19      0.28       250
+       MYO7A       0.22      0.24      0.23       783
+       NR2E3       0.64      0.34      0.44       508
+        OPA1       0.29      0.11      0.16       128
+       PDE6B       0.20      0.16      0.18       386
+      PRPF31       0.08      0.11      0.09       765
+       PRPF8       0.06      0.01      0.02       263
+       PRPH2       0.47      0.16      0.24      1353
+       RDH12       0.22      0.06      0.10       518
+         RHO       0.23      0.07      0.11      1212
+         RP1       0.30      0.13      0.18      1116
+       RP1L1       0.19      0.08      0.12       212
+         RP2       0.11      0.05      0.07       433
+       RPE65       0.04      0.11      0.06       256
+        RPGR       0.34      0.16      0.22      1896
+         RS1       0.71      0.44      0.55      1533
+       TIMP3       0.22      0.09      0.13       359
+       USH2A       0.34      0.59      0.43      3622
+
+    accuracy                           0.46     34082
+   macro avg       0.31      0.22      0.24     34082
+weighted avg       0.46      0.46      0.43     34082

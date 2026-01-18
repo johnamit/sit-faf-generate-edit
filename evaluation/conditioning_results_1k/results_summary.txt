@@ -1,0 +1,14 @@
+CONDITIONING EVALUATION RESULTS
+==================================================
+
+LATERALITY
+------------------------------
+Overall Accuracy: 96.60%
+Left Eye Accuracy: 97.92%
+Right Eye Accuracy: 95.38%
+
+AGE
+------------------------------
+Correlation (R): 0.8386
+R-squared: -0.3397
+Mean Absolute Error: 20.68 years
