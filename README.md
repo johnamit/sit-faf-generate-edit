@@ -608,8 +608,12 @@ Right Eye Accuracy: 96.52%
 AGE
 ------------------------------
 Correlation (R): 0.8488
+R-squared: 0.2662
 Mean Absolute Error: 14.84 years
 ```
+
+<img src="evaluation/conditioning_results_10k/age_correlation_plot.png" alt="age_corr_plot" width="400"><br>
+
 
 **Evaluation-only mode** (using pre-trained judges):
 ```bash
