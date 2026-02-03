@@ -1,10 +1,8 @@
 <img src="assets/icons/sit_faf_edit2.png" alt="ContraCTGAN" width="900"><br>
-<a href="https://huggingface.co/johnamit/sit-faf-generate-edit">
-  <img
-    src="https://img.shields.io/badge/View%20Model-HuggingFace-black?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=ff7f1e"
-    alt="View Model on Hugging Face"
-  />
-</a>
+
+[<img src="https://img.shields.io/badge/HuggingFace-Models-black?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=ff7f1e" alt="View Model on Hugging Face"/>](https://huggingface.co/johnamit/sit-faf-generate-edit)
+&nbsp;&nbsp;&nbsp;
+[<img src="https://img.shields.io/badge/Read%20Paper%20(old)-PDF-black?style=for-the-badge&labelColor=0057FF&logo=adobeacrobat&logoColor=white" alt="Read Paper"/>](https://drive.google.com/file/d/14sQsQiWsiFZTjVDHBfkP4D6JFlClG4AQ/view?usp=sharing)
 
 A deep learning project for **Fundus Autofluorescence (FAF) image generation, inversion and editing** using [Scalable Interpolant Transformers (SiT)](https://github.com/willisma/SiT). This repository enables conditional generation of synthetic FAF images based on genetic mutations, patient age, and eye laterality, with support for real-to-latent inversion and semantic image editing.
 
@@ -21,7 +19,6 @@ A deep learning project for **Fundus Autofluorescence (FAF) image generation, in
   <a href="#citation"><img src="https://img.shields.io/badge/Citation-111111?style=for-the-badge" alt="Citation"></a>
 </p>
 
----
 
 ## Overview
 
@@ -36,7 +33,7 @@ The model supports:
 2. **Image Inversion**: Map real FAF images back to the latent space
 3. **Semantic Editing**: Modify conditions (gene, age, laterality) to generate edited versions of real images
 
----
+
 
 ## Features
 
@@ -47,7 +44,7 @@ The model supports:
 - Distributed training with PyTorch DDP
 - Weights & Biases integration for experiment tracking
 
----
+
 
 ## Prerequisites
 
@@ -57,7 +54,7 @@ The model supports:
 - **Conda**: Miniconda or Anaconda for environment management
 - **Python**: 3.10+
 
----
+
 
 ## Project Structure
 
@@ -96,7 +93,7 @@ faf_flow_edit/
 └── stylegan2-ada-pytorch/         # StyleGAN2-ADA baseline
 ```
 
----
+
 
 ## Environment Setup
 
@@ -132,7 +129,7 @@ conda env create -f environments/env_stylegan2ada.yml
 conda activate stylegan2ada
 ```
 
----
+
 
 ## Dataset
 
@@ -197,7 +194,7 @@ python scripts/prepare_datasets/create_metadata_256.py \
     --output_csv data/images_256_cleaned/metadata_cleaned_256.csv
 ```
 
----
+
 
 ## Training
 
@@ -250,7 +247,7 @@ torchrun --nproc_per_node=<NUM_GPUS> train.py \
 
 The trained SiT-XL/2 model can be found in the [huggingface repo](https://huggingface.co/johnamit/sit-faf-generate-edit) for this project.
 
----
+
 
 ## Sampling
 
@@ -293,7 +290,7 @@ This script:
 2. Generates synthetic images matching those distributions
 3. Creates a manifest CSV for evaluation
 
----
+
 
 ## Inversion and Editing
 
@@ -413,7 +410,7 @@ Latent reconstruction MSE: 0.000006
 
 The low reconstruction MSE (0.000006) confirms high-quality inversion.
 
----
+
 
 #### Step 2: Single Attribute Editing
 
@@ -439,7 +436,7 @@ python invert.py edit \
 |:----------------------:|:--------------:|:----------------:|
 | ![Age32](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![Age65](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age65.png) | ![Age20](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age20.png) |
 
----
+
 
 **Laterality Editing** — Flip from Right to Left eye:
 
@@ -456,7 +453,7 @@ python invert.py edit \
 |:-----------------:|:----------:|
 | ![Right](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![Left](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_L_Age32.png) |
 
----
+
 
 **Gene Editing** — Transform between genetic phenotypes:
 
@@ -480,7 +477,7 @@ python invert.py edit \
 |:---------------------:|:--------------:|:-------------:|
 | ![ABCA4](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![USH2A](SiT/edits/00000018_pat_00448798_sdb/edited_USH2A_R_Age32.png) | ![OPA1](SiT/edits/00000018_pat_00448798_sdb/edited_OPA1_R_Age32.png) |
 
----
+
 
 #### Step 3: Multi-Attribute Editing
 
@@ -508,7 +505,7 @@ python invert.py edit \
 |:-------------------------:|:--------------:|:--------------:|
 | ![Original](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![USH2A_65](SiT/edits/00000018_pat_00448798_sdb/edited_USH2A_R_Age65.png) | ![USH2A_20](SiT/edits/00000018_pat_00448798_sdb/edited_USH2A_R_Age20.png) |
 
----
+
 
 **Gene + Laterality:**
 
@@ -534,7 +531,7 @@ python invert.py edit \
 |:------------------------:|:---------:|:--------:|
 | ![Original](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![USH2A_L](SiT/edits/00000018_pat_00448798_sdb/edited_USH2A_L_Age32.png) | ![OPA1_L](SiT/edits/00000018_pat_00448798_sdb/edited_OPA1_L_Age32.png) |
 
----
+
 
 **Age + Laterality:**
 
@@ -552,7 +549,7 @@ python invert.py edit \
 |:---------------------:|:--------------:|
 | ![Original](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![L_65](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_L_Age65.png) |
 
----
+
 
 #### Step 4: Triple Attribute Editing (Gene + Age + Laterality)
 
@@ -580,7 +577,7 @@ python invert.py edit \
 |:----------------------------:|:------------:|:-----------:|
 | ![Original](SiT/edits/00000018_pat_00448798_sdb/edited_ABCA4_R_Age32.png) | ![USH2A_L_75](SiT/edits/00000018_pat_00448798_sdb/edited_USH2A_L_Age75.png) | ![OPA1_R_40](SiT/edits/00000018_pat_00448798_sdb/edited_OPA1_R_Age40.png) |
 
----
+
 
 ## Evaluation
 
@@ -714,7 +711,7 @@ python scripts/evaluation/run_tstr.py \
 | SiT | 67.85% |
 | StyleGAN2-ADA | 46.33% |
 
----
+
 
 ## Citation
 
@@ -738,7 +735,7 @@ If you use this code in your research, please cite:
 }
 ```
 
----
+
 
 ## License
 
