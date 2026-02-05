@@ -713,6 +713,17 @@ python scripts/evaluation/run_tstr.py \
 
 
 ## Citation
+If you use this code or methodology in your research, please cite:
+
+```bibtex
+@misc{mgp-detect,
+  author = {Amit John},
+  title = {MotoGP Team Detection: Deep Re-ID for High-Velocity Agents},
+  year = {2025},
+  publisher = {GitHub},
+  url = {https://github.com/johnamit/mgp-detect}
+}
+```
 
 **SiT Paper:**
 ```bibtex
