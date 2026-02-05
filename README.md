@@ -716,16 +716,15 @@ python scripts/evaluation/run_tstr.py \
 If you use this code or methodology in your research, please cite:
 
 ```bibtex
-@misc{mgp-detect,
+@misc{sit_faf_generate_edit,
   author = {Amit John},
-  title = {MotoGP Team Detection: Deep Re-ID for High-Velocity Agents},
+  title = {SiT FAF Generation and Editing},
   year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/johnamit/mgp-detect}
+  url = {https://github.com/johnamit/sit-faf-generate-edit}
 }
 ```
 
-**SiT Paper:**
+**SiT (Scalable Interpolant Transformers):**
 ```bibtex
 @article{ma2024sit,
   title={SiT: Exploring Flow and Diffusion-based Generative Models with Scalable Interpolant Transformers},
@@ -734,7 +733,6 @@ If you use this code or methodology in your research, please cite:
   year={2024}
 }
 ```
-
 
 
 ## License
